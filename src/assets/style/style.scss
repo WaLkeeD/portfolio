@@ -252,7 +252,10 @@ body,
       align-items: center;
       padding: 30px 10px;
       justify-content: flex-end;
-      height: calc(105vh - $nav-mobile-height);
+      height: calc(100vh - $nav-mobile-height);
+    }
+    @media (max-width: 500px) {
+      height: unset;
     }
   }
 
@@ -308,9 +311,7 @@ body,
         max-width: 800px;
       }
 
-      @media (max-width: 700px) {
-        // font-size: 100%;
-      }
+      
     }
   }
 
@@ -322,13 +323,8 @@ body,
     height: 400px;
 
     @media (max-width: 1100px) {
-      width: 300px;
-      height: 300px;
-    }
-
-    @media (max-width: 1100px) {
-      width: unset;
-      height: unset;
+      width: 400px;
+      height: 400px;
       border-radius: 50%;
     }
 
@@ -458,7 +454,8 @@ body,
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     gap: 20px;
-    height: unset;
+    height: calc(100vh - $nav-height);
+
 
     @media (max-width: 1100px) {
       grid-template-columns: repeat(3, 1fr);
