@@ -1,0 +1,21 @@
+$RedHatDisplay: ("RedHatDisplay-Bold", 700), ("RedHatDisplay-Italic", 401),
+    ("RedHatDisplay-Medium", 500), ("RedHatDisplay-Regular", 400);
+
+@each $name, $weight in $RedHatDisplay {
+    @font-face {
+        font-family: "RedHatDisplay";
+        src: url("@/assets/fonts/RedHatDisplay/#{$name}.ttf");
+        font-weight: $weight;
+    }
+}
+
+$JosefinSans: ("JosefinSans-Bold", 700), ("JosefinSans-Medium", 500),
+    ("JosefinSans-Regular", 400), ("JosefinSans-Italic", 401);
+
+@each $name, $weight in $JosefinSans {
+    @font-face {
+        font-family: "JosefinSans";
+        src: url("@/assets/fonts/JosefinSans/#{$name}.ttf");
+        font-weight: $weight;
+    }
+}
